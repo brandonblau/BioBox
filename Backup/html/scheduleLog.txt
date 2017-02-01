@@ -1,0 +1,49 @@
+{2016/12/05 11:25:20} RaspiMJPEG Version 5.6.7
+{2016/12/05 11:25:20} recommended video buffers 1
+{2016/12/05 11:25:20} h264 buffers set to recommended 1
+{2016/12/05 11:25:20} Opening FIFO 0 /var/www/html/FIFO 6
+{2016/12/05 11:25:20} Opening FIFO 1 /var/www/html/FIFO11 7
+{2016/12/05 11:25:20} MJPEG streaming, ready to receive commands
+{2016/12/05 11:25:20} send smd 9
+[2016/12/05 11:25:21] RaspiCam support started
+[2016/12/05 11:25:21] Capture Pipe already exists /var/www/html/FIFO1
+[2016/12/05 11:25:21] Scheduler loop is started
+{2016/12/05 11:25:21} Starting command loop
+[2016/12/05 11:25:21] Reload parameters command requested
+[2016/12/05 11:25:21] Scheduler loop is started
+[2016/12/05 11:25:22] New period detected 0
+[2016/12/05 11:25:22] Scheduled management tasks. Next at 1480969522
+{2016/12/05 12:04:07} RaspiMJPEG Version 5.6.7
+{2016/12/05 12:04:08} recommended video buffers 1
+{2016/12/05 12:04:08} h264 buffers set to recommended 1
+{2016/12/05 12:04:08} Opening FIFO 0 /var/www/html/FIFO 6
+{2016/12/05 12:04:08} Opening FIFO 1 /var/www/html/FIFO11 7
+{2016/12/05 12:04:08} MJPEG streaming, ready to receive commands
+{2016/12/05 12:04:08} send smd 9
+[2016/12/05 12:04:13] RaspiCam support started
+[2016/12/05 12:04:14] Capture Pipe already exists /var/www/html/FIFO1
+[2016/12/05 12:04:14] Scheduler loop is started
+{2016/12/05 12:04:14} Starting command loop
+[2016/12/05 12:04:14] Reload parameters command requested
+[2016/12/05 12:04:14] Scheduler loop is started
+[2016/12/05 12:04:15] New period detected 0
+[2016/12/05 12:04:15] Scheduled management tasks. Next at 1480971855
+[2016/12/05 14:35:10] Scheduled management tasks. Next at 1480980910
+{2016/12/05 14:37:26} Timelapse started
+{2016/12/05 14:37:29} Capturing image
+{2016/12/05 14:37:31} Timelapse stopped
+{2016/12/05 14:37:34} Stream halted
+{2016/12/05 14:37:36} recommended video buffers 1
+{2016/12/05 14:37:36} h264 buffers set to recommended 1
+{2016/12/05 14:37:36} Stream continued
+{2016/12/05 14:47:25} Timelapse started
+{2016/12/05 14:47:26} Capturing image
+{2016/12/05 14:47:29} Capturing image
+{2016/12/05 14:47:32} Capturing image
+{2016/12/05 14:47:33} Timelapse stopped
+{2016/12/05 14:50:29} Capturing started
+{2016/12/05 14:50:33} Capturing stopped
+{2016/12/05 14:50:33} Add /var/www/html/media/vi_0000_20161205_145029.mp4 to Box Queue at pos 0
+{2016/12/05 14:50:33} Start boxing /var/www/html/media/vi_0000_20161205_145029.mp4.h264 to /var/www/html/media/vi_0000_20161205_145029.mp4 Queue pos 0
+{2016/12/05 14:50:34} Finished boxing /var/www/html/media/vi_0000_20161205_145029.mp4 from Box Queue at pos 0
+{2016/12/05 14:50:35} Removed item from Box Queue
