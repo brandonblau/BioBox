@@ -4,7 +4,7 @@ import curses
 import time
 import MySQLdb
 
-sensitivity = 100;    #sensitivity.  Higher (cap 255): less sensitive to hue changes. 
+sensitivity = 175;    #sensitivity.  Higher (cap 255): less sensitive to hue changes. 
 
 img = Image("/var/www/html/cam.jpg");
 width, height = img.size();
