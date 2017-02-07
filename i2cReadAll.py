@@ -32,6 +32,8 @@ try:
          
       #temp & humidity
       aout = aout + 1
+      bus.write_byte_data(0x48,0x40 | ((2) & 0x03), aout)
+      tempRead = bus.read_byte(0x48)
       humidity, tempRead = Adafruit_DHT.read(Adasensor, pin)  
       if humidity is None and tempRead is None:
          try:

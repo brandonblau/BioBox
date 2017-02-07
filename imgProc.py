@@ -44,4 +44,4 @@ img_copy.show();
 time.sleep(8);
 
 hue.show();
-time.sleep(8);
+time.sleep(30);
