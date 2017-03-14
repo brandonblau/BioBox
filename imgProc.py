@@ -4,7 +4,7 @@ import curses
 import time
 import MySQLdb
 
-sensitivity = 200;    #sensitivity.  Higher (cap 255): less sensitive to hue changes. 
+sensitivity = 100;    #sensitivity.  Higher (cap 255): less sensitive to hue changes. 
 
 img = Image("/var/www/html/cam.jpg");
 width, height = img.size();
@@ -20,6 +20,14 @@ hue = img.hueDistance(Color.GREEN);
 good=0;
 bad=0;
 
+firstx = (img.width/3)
+firsty = (img.height)
+print(img.width)
+print(img.height)
+
+crop = img.crop(0, 0, w=firstx, h=firsty, centered=False);
+crop.show()
+time.sleep(0.3)
 
 for n in range(0, square*square):
     x = n % square;
@@ -32,6 +40,7 @@ for n in range(0, square*square):
     good = good +1;
     blue, red, green = crop.meanColor();
     avg = (red+blue+green)/3;
+
     if avg > sensitivity:
         assignedColor = Color.BLACK;
         good = good - 1;
