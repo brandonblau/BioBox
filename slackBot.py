@@ -57,7 +57,7 @@ if slack_client.rtm_connect():
                     slack_client.api_call(
                         "chat.postMessage",
                         channel=message['channel'],
-                        text="My temperature is at %s%F." % row[tempCol],
+                        text="My temperature is at {0} F.".format(row[tempCol]),
                         as_user=True,)
 
                 if re.match(r'.*(light|leds).*', message_text, re.IGNORECASE):
@@ -65,7 +65,7 @@ if slack_client.rtm_connect():
                     slack_client.api_call(
                         "chat.postMessage",
                         channel=message['channel'],
-                        text="My light is at %s%." % row[lightCol],
+                        text="My light is at {0}.".format(row[lightCol]),
                         as_user=True,)
 
                 if re.match(r'.*(moisture|moist).*', message_text, re.IGNORECASE):
@@ -73,7 +73,7 @@ if slack_client.rtm_connect():
                     slack_client.api_call(
                         "chat.postMessage",
                         channel=message['channel'],
-                        text="My moisture is at %s%%." % row[moistCol],
+                        text="My moisture is at {0}%.".format(row[moistCol]),
                         as_user=True,)
 
                 if re.match(r'.*(humid|humidity).*', message_text, re.IGNORECASE):
@@ -81,7 +81,7 @@ if slack_client.rtm_connect():
                     slack_client.api_call(
                         "chat.postMessage",
                         channel=message['channel'],
-                        text="My humidity is at %s%%." % row[humidCol],
+                        text="My humidity is at {0}%.".format(row[humidCol]),
                         as_user=True,)
 
                 if re.match(r'.*(watered|water|pump).*', message_text, re.IGNORECASE):
@@ -89,19 +89,8 @@ if slack_client.rtm_connect():
                     slack_client.api_call(
                         "chat.postMessage",
                         channel=message['channel'],
-                        text="My pump is %s%." % row[waterCol],
+                        text="My pump is {0}.".format(row[waterCol]),
                         as_user=True,)
 
-                if re.match(r'.*(image|picture|nudes).*', message_text, re.IGNORECASE):
-
-  		    image_url = "file:///var/www/html/cam.jpg"
-		    attachments = [{"title": "Plant","image_url": image_url}]
-
-                    slack_client.api_call(
-                        "chat.postMessage",
-                        channel=message['channel'],
-                        text="Here is a picture.",
-                        attachments = attachments,
-                        as_user=True)
 
         time.sleep(1)
