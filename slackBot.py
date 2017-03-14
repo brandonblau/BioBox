@@ -6,6 +6,13 @@ import MySQLdb
 from slackclient import SlackClient
 
 
+tempCol = 1;
+lightCol = 2;
+moistCol = 3;
+humidCol = 4;
+waterCol = 5;
+
+
 slack_client = SlackClient("xoxb-154876783414-I2BH4o8xl8io7lnNWbdCXHyc")
 
 
@@ -31,44 +38,70 @@ if slack_client.rtm_connect():
                     split("<@%s>" % slack_user_id)[1].\
                     strip()
 
-                if re.match(r'.*(water).*', message_text, re.IGNORECASE):
-                    cpu_pct = psutil.cpu_percent(interval=1, percpu=False)
-
-		    db = MySQLdb.connect(host="localhost",    # your host, usually localhost
+                db = MySQLdb.connect(host="localhost",    # your host, usually localhost
                          user="root",         # your username
                          passwd="raspberry",  # your password
                          db="sensor_database")        # name of the data base
 
-                    # you must create a Cursor object. It will let
-                    #  you execute all the queries you need
-                    cur = db.cursor()
+                cur = db.cursor()
 
-                    # Use all the SQL you like
-                    cur.execute("SELECT * FROM plant_log ORDER BY ID DESC LIMIT 1")
+                # Use all the SQL you like
+                cur.execute("SELECT * FROM plant_log ORDER BY DateTime DESC LIMIT 1")
+                    
+                row = cur.fetchone()
 
-                    # print all the first cell of all the rows
-                    for row in cur.fetchall():
-                        print row[0]
+		db.close()
 
-		    db.close()
+                if re.match(r'.*(temperature|temp).*', message_text, re.IGNORECASE):
 
-		    image_url = "/var/www/html/cam.jpg"
-		    attachments = attachments = [{"title": "Plant","image_url": image_url}]
-	
                     slack_client.api_call(
                         "chat.postMessage",
                         channel=message['channel'],
-                        text="My CPU is at %s%%." % cpu_pct,
+                        text="My temperature is at %s%F." % row[tempCol],
                         as_user=True,)
 
-                if re.match(r'.*(memory|ram).*', message_text, re.IGNORECASE):
-                    mem = psutil.virtual_memory()
-                    mem_pct = mem.percent
+                if re.match(r'.*(light|leds).*', message_text, re.IGNORECASE):
 
                     slack_client.api_call(
                         "chat.postMessage",
                         channel=message['channel'],
-                        text="My RAM is at %s%%." % mem_pct,
+                        text="My light is at %s%." % row[lightCol],
+                        as_user=True,)
+
+                if re.match(r'.*(moisture|moist).*', message_text, re.IGNORECASE):
+
+                    slack_client.api_call(
+                        "chat.postMessage",
+                        channel=message['channel'],
+                        text="My moisture is at %s%%." % row[moistCol],
+                        as_user=True,)
+
+                if re.match(r'.*(humid|humidity).*', message_text, re.IGNORECASE):
+
+                    slack_client.api_call(
+                        "chat.postMessage",
+                        channel=message['channel'],
+                        text="My humidity is at %s%%." % row[humidCol],
+                        as_user=True,)
+
+                if re.match(r'.*(watered|water|pump).*', message_text, re.IGNORECASE):
+
+                    slack_client.api_call(
+                        "chat.postMessage",
+                        channel=message['channel'],
+                        text="My pump is %s%." % row[waterCol],
+                        as_user=True,)
+
+                if re.match(r'.*(image|picture|nudes).*', message_text, re.IGNORECASE):
+
+  		    image_url = "file:///var/www/html/cam.jpg"
+		    attachments = [{"title": "Plant","image_url": image_url}]
+
+                    slack_client.api_call(
+                        "chat.postMessage",
+                        channel=message['channel'],
+                        text="Here is a picture.",
+                        attachments = attachments,
                         as_user=True)
 
         time.sleep(1)

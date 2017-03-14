@@ -38,4 +38,3 @@ def sendEmail(stringIn):
     server.sendmail(fromaddr, toaddr, text)
     server.quit()
 
-sendEmail("This is testing the string in function!")

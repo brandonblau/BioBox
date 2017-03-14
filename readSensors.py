@@ -64,14 +64,14 @@ try:
                   db="sensor_database")
       x = conn.cursor()
       datetime = (time.strftime("%Y-%m-%d ") + time.strftime("%H:%M:%S"))
-
+      watered = 0
       try:
          if humidity is not None and tempRead is not None:
             lastTemp = tempRead
-            x.execute("""INSERT INTO plant_log VALUES (%s,%s,%s,%s,%s)""",(datetime,int(tempRead),lightRead,moistRead,humidity))
+            x.execute("""INSERT INTO plant_log VALUES (%s,%s,%s,%s,%s,%s)""",(datetime,int(tempRead),lightRead,moistRead,humidity,watered))
             conn.commit()
          else:
-            x.execute("""INSERT INTO plant_log VALUES (%s,%s,%s,%s,%s)""",(datetime,int(lastTemp),lightRead,moistRead,humidity))
+            x.execute("""INSERT INTO plant_log VALUES (%s,%s,%s,%s,%s,%s)""",(datetime,int(lastTemp),lightRead,moistRead,humidity,watered))
             conn.commit()
       except:
          conn.rollback()
