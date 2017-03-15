@@ -13,3 +13,21 @@ def lastEntry(database, table, col):
     else:
         return None;
 
+def avgDailyValue(StringIn):
+    #Server Connection to MySQL:
+    conn = MySQLdb.connect(host= "localhost",
+        user="root",
+        passwd="raspberry",
+        db="sensor_database")
+    x = conn.cursor()
+    try:
+        execute = "SELECT Avg("+StringIn+") from plant_log where Date(DateTime) = CURDATE();"
+        x.execute(execute)
+        conn.commit()
+        data = x.fetchone()
+        avgValue = data[0]
+    except:
+        conn.rollback()
+    conn.close();
+    return avgValue
+
