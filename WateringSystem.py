@@ -5,6 +5,7 @@ import MySQLdb
 from pump import pumpOn,pumpOff;
 
 moist = lastEntry("sensor_database","plant_log","Moist");
+
 if (moist > 50):
     pumpOn();
     watered = 1;

@@ -16,10 +16,12 @@ def togglePump():
 
 def pumpOn():
     GPIO.output(4, GPIO.LOW);
-    print('Pump switched on');
+    #print('Pump switched on');
 
 def pumpOff():
     GPIO.output(4, GPIO.HIGH);
-    print('Pump switched off');
+    #print('Pump switched off');
+
+togglePump();
     
 
