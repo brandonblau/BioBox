@@ -1,4 +1,4 @@
-import pump.py
+import pump
 
 togglePump();
 
