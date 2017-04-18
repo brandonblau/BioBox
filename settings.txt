@@ -1,9 +1,0 @@
-plant=basil;
-lighthours=12;
-lightstart=8;
-maxwater=4;
-emailto=brandonblau@me.com;
-emailfrequency=day;
-slack=xoxb-154876783414-I2BH4o8xl8io7lnNWbdCXHyc;
-emailfrom=bioboxdev@gmail.com;
-emailfrompass=tinyrick;

@@ -1,0 +1,8 @@
+annotation BioBox
+anno_background 1
+white_balance fluorescent
+width 1024
+quality 100
+divider 16
+video_width 1280
+video_height 0720

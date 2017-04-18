@@ -22,5 +22,5 @@ def pumpOff():
     GPIO.output(4, GPIO.HIGH);
     #print('Pump switched off');
 
-    
+togglePump();
 
