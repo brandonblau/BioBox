@@ -27,6 +27,7 @@ OPTIONAL:
 ## Steps
 ### Setup the Raspberry Pi 3
 #### MacOS:
+[Tutorial from here](https://computers.tutsplus.com/articles/how-to-clone-raspberry-pi-sd-cards-using-the-command-line-in-os-x--mac-59911)
  1. Download Software Image from [here] 
  2. Insert the MicroSD Card to be installed upon
 - Insert a blank (or used and nuked) SD card into the SD card reader on your Mac.
