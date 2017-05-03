@@ -4,18 +4,27 @@ LMU Senior Project 2017
 ![BioBox](https://raw.githubusercontent.com/brandonblau/BioBox/master/Resources/IMG_8914.jpg?token=AKC6nPZQuzDk7MdfpY8RP1YwcCCE_h8yks5ZEycGwA%3D%3D)
 
 ## Things you will need
-- Raspberry Pi 3
-- Raspberry Pi Power Supply
+- $35 [Raspberry Pi 3](https://www.amazon.com/Raspberry-Pi-RASPBERRYPI3-MODB-1GB-Model-Motherboard/dp/B01CD5VC92)
+- $9.99 [Raspberry Pi Power Supply](https://www.amazon.com/CanaKit-Raspberry-Supply-Adapter-Charger/dp/B00MARDJZ4/ref=pd_sim_147_1?_encoding=UTF8&pd_rd_i=B00MARDJZ4&pd_rd_r=16GG90H18DXRBV8JPYC0&pd_rd_w=WuKq5&pd_rd_wg=tjcn6&psc=1&refRID=16GG90H18DXRBV8JPYC0)
 - Ethernet Cable
-- DHT11
-- Rpi Camera Module
-- Light Sensor
-- Moisture Sensor
-- Pump
-- Pump Power supply
-- Plastic Tubing
-- Socker Enclosure
-- LED array
+- $7.99 [MicroSD Card](https://www.amazon.com/SanDisk-Mobile-MicroSDHC-Adapter-SDSDQM-016G-B35A/dp/B004ZIENBA/ref=sr_1_3?s=pc&ie=UTF8&qid=1493079793&sr=1-3&keywords=micro+sd+card)
+- $9.99 [DHT11](https://www.amazon.com/gp/product/B00NAY22V8/ref=oh_aui_detailpage_o07_s01?ie=UTF8&psc=1)
+- $30 [Rpi Camera Module](https://www.amazon.com/Raspberry-Pi-Camera-Module-Megapixel/dp/B01ER2SKFS/ref=sr_1_1?s=electronics&ie=UTF8&qid=1493079683&sr=1-1&keywords=pi+cam)
+- $3.50 [Light Sensor](https://www.dfrobot.com/product-1004.html?gclid=CI37nLKsvtMCFZIBaQodBhkK3Q)
+- $1.86 [Moisture Sensor](https://www.amazon.com/SODIAL-Humidity-Moisture-Detection-Digital/dp/B01I1DNW8O/ref=sr_1_22?s=industrial&ie=UTF8&qid=1493824528&sr=1-22&keywords=moisture+sensor)
+- $12.99 [Peristaltic Pump](https://www.amazon.com/ZJchao-Dosing-Peristaltic-Aquarium-Analytic/dp/B00F9MXFFQ/ref=sr_1_5?ie=UTF8&qid=1493824225&sr=8-5&keywords=peristaltic+pump)
+- $5.59 [Pump Power supply](https://www.amazon.com/gp/product/B005JRGOCM/ref=oh_aui_detailpage_o02_s01?ie=UTF8&psc=1)
+- $3.88 [Silicone Tubing](https://www.amazon.com/Baomain-Silicone-Tubing-Vacuum-Hose/dp/B01IB8EH8S/ref=sr_1_3?s=industrial&ie=UTF8&qid=1493824381&sr=1-3&keywords=white+silicone+tubing+1%2F8%22id)
+- $24.99 [LED array](https://www.amazon.com/gp/product/B01IVQ96KY/ref=oh_aui_detailpage_o05_s00?ie=UTF8&psc=1)
+- $7.99 [Analog<->Digital Converter](https://www.amazon.com/SMAKN®-PCF8591-Converter-Digital-Conversion/dp/B00RMBTAO2/ref=sr_1_2?s=electronics&ie=UTF8&qid=1493078912&sr=1-2&keywords=PCF8591+AD%2FDA)
+- $7.99 [Jumper Wires](https://www.amazon.com/gp/product/B01FPMN432/ref=oh_aui_detailpage_o09_s00?ie=UTF8&psc=1)
+- $19.99 [Controllable Outlet](https://www.adafruit.com/product/2935)
+- $6.79 [5V Power Relay](https://www.amazon.com/gp/product/B00E0NTPP4/ref=oh_aui_detailpage_o02_s00?ie=UTF8&psc=1)
+
+- TOTAL: $188.54
+
+- OPTIONAL ENCLOSURE:
+- $19.99 [Socker Enclosure](http://www.ikea.com/us/en/catalog/products/70186603/)
 
 ## Steps
 ### Setup the Raspberry Pi 3
