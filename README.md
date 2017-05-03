@@ -1,6 +1,8 @@
 # BioBox
 LMU Senior Project 2017
 
+![BioBox](https://raw.githubusercontent.com/brandonblau/BioBox/master/Resources/IMG_8914.jpg?token=AKC6nPZQuzDk7MdfpY8RP1YwcCCE_h8yks5ZEycGwA%3D%3D)
+
 ## Things you will need
 - Raspberry Pi 3
 - Raspberry Pi Power Supply
