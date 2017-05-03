@@ -64,9 +64,22 @@ Download BioBoxOS Image from [here]()
   2. Connect the Raspberry Pi to the internet and find the IP address. 
   3. ssh into the Raspbery Pi 3.
 ### Setup the SlackBot
-  1. Create a slack account and group.
-  2. Create a slack bot. 
+  1. [Create a slack account and group.](https://slack.com/get-started)
+  2. [Create a slack bot and save the key.](https://my.slack.com/services/new/bot) 
   3. Connect the slack bot.
+### Set Software Preferences for BioBox
+  1. On any web-browser, connect to your BioBox's IP address
+  - Our's, for instance, is at 10.5.96.104
+  2. For safety and security, the BioBox page is password protected.  
+  - By default: Username: biobox  Password: biobox
+  [screencap](https://github.com/brandonblau/BioBox/blob/master/Resources/screencap.png?raw=true)
+  - Here is where you can view your plant from your home network, take pictures or videos, and save the pictures and video to your computer.
+  [landingpageScreencap](https://github.com/brandonblau/BioBox/blob/master/Resources/landingpageScreencap.png?raw=true)
+  3. Select "Customization Settings" from the top navigation bar
+  - This is where you tell the system the color of the plant you are growing for image processing detection, the amount of time you want the plant to have light.  What time you want the light to start. The contact frequency of the emailing system, and the place where you input the key generated for your specific SlackBot in the previous step.  
+  [customizationScreenCap](https://github.com/brandonblau/BioBox/blob/master/Resources/customizationScreenCap.png?raw=true)
+  - Hardware specification settings are advanced and are how the system knows which sensors are connected where on the Raspberry Pi.  Super Useres only should change these settings.  
+  
 ### Hardware Setup.
   1. Setup Sensors
      1. Setup the Analog to Digital Converter (ADC for short).
