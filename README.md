@@ -29,7 +29,7 @@ OPTIONAL:
 #### MacOS:
  1. Download Software Image from [here]
  2. Insert the MicroSD Card to be installed upon
-- Insert a blank (or used and nuked) SD card into the SD card reader on your Mac.
+##### Insert a blank (or used and nuked) SD card into the SD card reader on your Mac.
  3. Locate the MicroSD Card to be used
 	Open Terminal and locate your MicroSD card, noting that the number may be different than shown below:
 		diskutil list
