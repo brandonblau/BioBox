@@ -1,5 +1,5 @@
 # BioBox
-![BioBox](https://cloud.githubusercontent.com/assets/10533532/25667781/6f864ffa-2fd9-11e7-83f2-88967db505cd.jpg]
+![BioBox][https://github.com/brandonblau/BioBox/blob/master/Resources/BioBoxLogoSmall.jpg?raw=true]
 LMU Senior Project 2017
 
 ## Things you will need
