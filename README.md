@@ -6,7 +6,6 @@ LMU Senior Project 2017
 ## Things you will need
 - $35 [Raspberry Pi 3](https://www.amazon.com/Raspberry-Pi-RASPBERRYPI3-MODB-1GB-Model-Motherboard/dp/B01CD5VC92)
 - $9.99 [Raspberry Pi Power Supply](https://www.amazon.com/CanaKit-Raspberry-Supply-Adapter-Charger/dp/B00MARDJZ4/ref=pd_sim_147_1?_encoding=UTF8&pd_rd_i=B00MARDJZ4&pd_rd_r=16GG90H18DXRBV8JPYC0&pd_rd_w=WuKq5&pd_rd_wg=tjcn6&psc=1&refRID=16GG90H18DXRBV8JPYC0)
-- Ethernet Cable
 - $7.99 [MicroSD Card](https://www.amazon.com/SanDisk-Mobile-MicroSDHC-Adapter-SDSDQM-016G-B35A/dp/B004ZIENBA/ref=sr_1_3?s=pc&ie=UTF8&qid=1493079793&sr=1-3&keywords=micro+sd+card)
 - $9.99 [DHT11](https://www.amazon.com/gp/product/B00NAY22V8/ref=oh_aui_detailpage_o07_s01?ie=UTF8&psc=1)
 - $30 [Rpi Camera Module](https://www.amazon.com/Raspberry-Pi-Camera-Module-Megapixel/dp/B01ER2SKFS/ref=sr_1_1?s=electronics&ie=UTF8&qid=1493079683&sr=1-1&keywords=pi+cam)
@@ -21,11 +20,11 @@ LMU Senior Project 2017
 - $19.99 [Controllable Outlet](https://www.adafruit.com/product/2935)
 - $6.79 [5V Power Relay](https://www.amazon.com/gp/product/B00E0NTPP4/ref=oh_aui_detailpage_o02_s00?ie=UTF8&psc=1)
 
-- TOTAL: $188.54
+TOTAL: $188.54
 
-- OPTIONAL ENCLOSURE:
+OPTIONAL:
 - $19.99 [Socker Enclosure](http://www.ikea.com/us/en/catalog/products/70186603/)
-
+- Ethernet Cable
 ## Steps
 ### Setup the Raspberry Pi 3
   1. Format the SD Card.
