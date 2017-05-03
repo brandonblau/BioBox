@@ -29,9 +29,18 @@ LMU Senior Project 2017
   3. Connect the slack bot.
 ### Hardware Setup.
   1. Setup Sensors
-     1. Setup Analog to Digital Converter.
+     1. Setup the Analog to Digital Converter (ADC for short).
+        1. Connect the _ pin of the ADC to the _ pin if the Rpi.
+        1. Connect the _ pin of the ADC to the _ pin if the Rpi.
+        1. Connect the _ pin of the ADC to the _ pin if the Rpi.
      2. Setup Light Sensor.
+        1. Connect the _ pin of the Light Sensor to the _ pin if the Rpi.
+        1. Connect the _ pin of the Light Sensor to the _ pin if the Rpi.
+        1. Connect the _ pin of the Light Sensor to the _ pin if the Rpi.
      3. Setup Soil Moisture Sensor.
+        1. Connect the _ pin of the Soil Moisture Sensor to the _ pin if the Rpi.
+        1. Connect the _ pin of the Soil Moisture Sensor to the _ pin if the Rpi.
+        1. Connect the _ pin of the Soil Moisture Sensor to the _ pin if the Rpi.
   2. Setup the LED's
      1. Connect left pin to pin _ of the Raspberry Pi.
      2. Connect right pin to pin _ of the Raspberry Pi.
