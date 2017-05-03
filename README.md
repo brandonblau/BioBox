@@ -26,6 +26,34 @@ OPTIONAL:
 - Ethernet Cable
 ## Steps
 ### Setup the Raspberry Pi 3
+#### MacOS:
+ 1. Download Software Image from [here]
+ 2. Insert the MicroSD Card to be installed upon
+- Insert a blank (or used and nuked) SD card into the SD card reader on your Mac.
+ 3. Locate the MicroSD Card to be used
+	Open Terminal and locate your MicroSD card, noting that the number may be different than shown below:
+		diskutil list
+
+ 4. Unmount the MicroSD Card
+	In Terminal, enter the following command:
+		diskutil unmountDisk /dev/disk2
+ 5. Format the MicroSD Card
+	When you have identified your MicroSD Card, enter the following command to format it as FAT16, in my case its /dev/disk2.  Amend this as required for your circumstances:
+sudo newfs_msdos -F 16 /dev/disk2
+
+6. Install from the downloaded Disc Image
+	Locate the disc image, .dmg, that you previously downed. My example assumes that the dmg is on the Desktop. In Terminal, enter the following command ensuring that you identify the correct destination disc, in my example it’s /dev/disk2.
+		sudo dd if=~/Desktop/raspberrypi.dmg of=/dev/disk2 
+Tip: Be aware that restoring the disc image to the SD Card can take some time. Probably a lot longer than you think. My Mac took 3 hours 27 minutes to restore on an 16GB SDXC card.
+
+[Windows]
+
+--Insert windows instructions
+### Download software and dependencies.
+
+
+
+
   1. Format the SD Card.
   2. Downlaod the Linux distribution.
   3. Mount the SD Card.
