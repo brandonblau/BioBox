@@ -1,7 +1,6 @@
 # BioBox
+![BioBox](https://cloud.githubusercontent.com/assets/10533532/25667781/6f864ffa-2fd9-11e7-83f2-88967db505cd.jpg]
 LMU Senior Project 2017
-
-![BioBox](https://raw.githubusercontent.com/brandonblau/BioBox/master/Resources/IMG_8914.jpg?token=AKC6nPZQuzDk7MdfpY8RP1YwcCCE_h8yks5ZEycGwA%3D%3D)
 
 ## Things you will need
 - $35 [Raspberry Pi 3](https://www.amazon.com/Raspberry-Pi-RASPBERRYPI3-MODB-1GB-Model-Motherboard/dp/B01CD5VC92)
