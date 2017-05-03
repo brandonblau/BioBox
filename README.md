@@ -47,6 +47,7 @@ LMU Senior Project 2017
      3. Connect the LED's to the LED power supply.
      4. Plug the LED power supply into the right side of the controlled power source.
   3. Setup the pump
+    [View the video here!](https://www.youtube.com/watch?v=v65U86tB1cM)
      1. Plug the _ pins of the relay into the 5V pin of the raspberry pi.
      2. Plug the _ pins of the relay into the ground pin of the Raspberry pi.
      3. Put one end of the thick gauge wire into the leftmost terminal of the right relay, screw in to secure.
