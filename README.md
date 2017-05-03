@@ -27,23 +27,24 @@ OPTIONAL:
 ## Steps
 ### Setup the Raspberry Pi 3
 #### MacOS:
- 1. Download Software Image from [here]
+ 1. Download Software Image from [here] 
  2. Insert the MicroSD Card to be installed upon
-##### Insert a blank (or used and nuked) SD card into the SD card reader on your Mac.
+- Insert a blank (or used and nuked) SD card into the SD card reader on your Mac.
  3. Locate the MicroSD Card to be used
-	Open Terminal and locate your MicroSD card, noting that the number may be different than shown below:
+- Open Terminal and locate your MicroSD card, noting that the number may be different than shown below:
 		diskutil list
-
+	![pic1](https://github.com/brandonblau/BioBox/blob/master/Resources/pic1.png?raw=true)
  4. Unmount the MicroSD Card
-	In Terminal, enter the following command:
+- In Terminal, enter the following command:
 		diskutil unmountDisk /dev/disk2
  5. Format the MicroSD Card
-	When you have identified your MicroSD Card, enter the following command to format it as FAT16, in my case its /dev/disk2.  Amend this as required for your circumstances:
-sudo newfs_msdos -F 16 /dev/disk2
-
+- When you have identified your MicroSD Card, enter the following command to format it as FAT16, in my case its /dev/disk2.  Amend this as required for your circumstances:
+		sudo newfs_msdos -F 16 /dev/disk2
+	![pic2](https://github.com/brandonblau/BioBox/blob/master/Resources/pic2.png?raw=true)
 6. Install from the downloaded Disc Image
-	Locate the disc image, .dmg, that you previously downed. My example assumes that the dmg is on the Desktop. In Terminal, enter the following command ensuring that you identify the correct destination disc, in my example it’s /dev/disk2.
+- Locate the disc image, .dmg, that you previously downed. My example assumes that the dmg is on the Desktop. In Terminal, enter the following command ensuring that you identify the correct destination disc, in my example it’s /dev/disk2.
 		sudo dd if=~/Desktop/raspberrypi.dmg of=/dev/disk2 
+	![pic3](https://github.com/brandonblau/BioBox/blob/master/Resources/pic3.png?raw=true)
 Tip: Be aware that restoring the disc image to the SD Card can take some time. Probably a lot longer than you think. My Mac took 3 hours 27 minutes to restore on an 16GB SDXC card.
 
 [Windows]
