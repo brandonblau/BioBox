@@ -26,7 +26,7 @@ OPTIONAL:
 - Ethernet Cable
 ## Steps
 ### Setup the Raspberry Pi 3
-#### MacOS:
+#### MacOS SD Card Intall:
 [Tutorial from here](https://computers.tutsplus.com/articles/how-to-clone-raspberry-pi-sd-cards-using-the-command-line-in-os-x--mac-59911)
  1. Download Software Image from [here] 
  2. Insert the MicroSD Card to be installed upon
@@ -48,20 +48,21 @@ OPTIONAL:
 	![pic3](https://github.com/brandonblau/BioBox/blob/master/Resources/pic3.png?raw=true)
 Tip: Be aware that restoring the disc image to the SD Card can take some time. Probably a lot longer than you think. My Mac took 3 hours 27 minutes to restore on an 16GB SDXC card.
 
-[Windows]
+#### Windows SD Card Install
+Download Win32DiskImager from [here](http://sourceforge.net/projects/win32diskimager/)
+Download BioBoxOS Image from [here]()
 
---Insert windows instructions
+1. Insert the SD card back into your computer.
+2. Head to the start menu or screen and type "disk management." Open the disk management program and find your SD card in the list.
+3. Right-click and delete all the partitions on your SD card. When it's empty, right-click on it and format it (it doesn't matter what filesystem you format it to, your computer just needs to recognize it).
+4. Open Win32DiskImager again and browse for your image file. Select your device from the Device dropdown just as you did before.
+5. Click "Write" to write the image to the SD card.
+6. When it finishes, eject the SD card and re-insert it into your Raspberry Pi. When you boot it up, it should be in the exact same state it was in when you first cloned the SD card.
+
 ### Download software and dependencies.
-
-
-
-
-  1. Format the SD Card.
-  2. Downlaod the Linux distribution.
-  3. Mount the SD Card.
-  4. Put the SD card into the Raspberry Pi 3.
-  5. Connect the Raspberry Pi to the internet and find the IP address. 
-  6. ssh into the Raspbery Pi 3.
+  1. Put the SD card into the Raspberry Pi 3.
+  2. Connect the Raspberry Pi to the internet and find the IP address. 
+  3. ssh into the Raspbery Pi 3.
 ### Setup the SlackBot
   1. Create a slack account and group.
   2. Create a slack bot. 
