@@ -83,17 +83,18 @@ Download BioBoxOS Image from [here]()
 ### Hardware Setup.
   1. Setup Sensors
      1. Setup the Analog to Digital Converter (ADC for short).
-        1. Connect the _ pin of the ADC to the _ pin if the Rpi.
-        1. Connect the _ pin of the ADC to the _ pin if the Rpi.
-        1. Connect the _ pin of the ADC to the _ pin if the Rpi.
+        1. Connect the SCL pin of the ADC to the 5 pin if the Rpi.
+        1. Connect the SDA pin of the ADC to the 3 pin if the Rpi.
+        1. Connect the GND pin of the ADC to the 9 pin if the Rpi.
+	1. Connect the VCC pin of the ADC to the 4 pin of the Rpi.
      2. Setup Light Sensor.
-        1. Connect the _ pin of the Light Sensor to the _ pin if the Rpi.
-        1. Connect the _ pin of the Light Sensor to the _ pin if the Rpi.
-        1. Connect the _ pin of the Light Sensor to the _ pin if the Rpi.
+        1. Connect the blue wire of the Light Sensor to the AI2 of the ADC.
+        1. Connect the red wire of the Light Sensor to the 17 pin if the Rpi.
+        1. Connect the black wire of the Light Sensor to the pin 9 if the Rpi.
      3. Setup Soil Moisture Sensor.
-        1. Connect the _ pin of the Soil Moisture Sensor to the _ pin if the Rpi.
-        1. Connect the _ pin of the Soil Moisture Sensor to the _ pin if the Rpi.
-        1. Connect the _ pin of the Soil Moisture Sensor to the _ pin if the Rpi.
+        1. Connect the yellow wire of the Soil Moisture Sensor to the ground pin if the Rpi.
+        1. Connect the vcc wire of the Soil Moisture Sensor to the vcc pin if the Rpi.
+        1. Connect the A0 pin of the Soil Moisture Sensor to the Ai3 pin if the ADC.
   2. Setup the LED's
      1. Connect left pin to pin _ of the Raspberry Pi.
      2. Connect right pin to pin _ of the Raspberry Pi.
